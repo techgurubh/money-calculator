@@ -62,7 +62,7 @@ header, .card, .footer, .credit {
 /* Rows – COMPACT FIX */
 .row {
   display: grid;
-  grid-template-columns: 60px 1fr 20px 70px;
+  grid-template-columns: 64px minmax(90px, 1fr) 18px 72px;
   align-items: center;
   gap: 6px;
   margin: 10px 0;
@@ -70,6 +70,7 @@ header, .card, .footer, .credit {
 
 .label {
   font-weight: 600;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -83,8 +84,8 @@ header, .card, .footer, .credit {
 
 /* Inputs – SHORTER */
 .qty {
-  padding: 8px;
-  height: 36px;
+  padding: 6px 8px;
+  height: 34px;
   border-radius: 10px;
   border: none;
   background: rgba(255,255,255,0.25);
@@ -92,6 +93,7 @@ header, .card, .footer, .credit {
   text-align: center;
   outline: none;
   font-size: 14px;
+  max-width: 100%;
 }
 
 .qty::placeholder {
@@ -109,6 +111,8 @@ header, .card, .footer, .credit {
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Divider */
