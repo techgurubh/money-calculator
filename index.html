@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Money Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="menu">☰</div>
+    <div class="day" id="dayDateText">Saturday, 07 Feb</div>
+    <button class="clear-btn" id="clearBtn">✕</button>
+  </header>
+
+  <!-- Calculator Card -->
+  <div class="card">
+
+    <!-- Add row -->
+    <div class="row">
+      <span class="label add">Add +</span>
+      <input type="number" class="qty" id="addAmount" placeholder="0" />
+      <span class="equals">=</span>
+      <span class="total" id="addTotal">0</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Denominations -->
+    <div id="denominationRows"></div>
+
+    <div class="divider"></div>
+
+    <!-- Expected / Difference -->
+    <div class="row">
+      <span class="label expected">Expected</span>
+      <input type="number" class="qty" id="expectedAmount" placeholder="0" />
+      <span class="equals">=</span>
+      <span class="total" id="difference">0</span>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <button class="compare-btn" id="compareBtn" disabled>Compare</button>
+    <div class="grand-total">₹<span id="grandTotal">0</span></div>
+  </footer>
+
+  <!-- Credit -->
+  <div class="credit">
+    Developed by
+    <a href="https://wa.me/917002443108" target="_blank">
+      Jahangir Hussain
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
