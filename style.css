@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b1055, #5f2c82, #41295a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Particles */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+header, .card, .footer, .credit {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.header {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.15);
+}
+
+.day {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.clear-btn {
+  border: none;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+/* Glass card */
+.card {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Rows – COMPACT FIX */
+.row {
+  display: grid;
+  grid-template-columns: 60px 1fr 20px 70px;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.add {
+  color: #baffc9;
+}
+
+.expected {
+  color: #d6b3ff;
+}
+
+/* Inputs – SHORTER */
+.qty {
+  padding: 8px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  text-align: center;
+  outline: none;
+  font-size: 14px;
+}
+
+.qty::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Equals & totals */
+.equals {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.total {
+  text-align: right;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: nowrap;
+}
+
+/* Divider */
+.divider {
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+  margin: 14px 0;
+}
+
+/* Footer */
+.footer {
+  position: sticky;
+  bottom: 0;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(16px);
+  background: rgba(255,255,255,0.15);
+}
+
+.compare-btn {
+  padding: 10px 22px;
+  border-radius: 14px;
+  border: none;
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.compare-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.grand-total {
+  font-size: 22px;
+  font-weight: 700;
+  color: #baffc9;
+  white-space: nowrap;
+}
+
+/* Credit */
+.credit {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.credit a {
+  color: #d6b3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
